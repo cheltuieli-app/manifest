@@ -1,0 +1,80 @@
+<cheltuieli.app version="1.0" language="ro-RO" currency="RON">
+    <def type="constant" name="astăzi" value="2023-01-22" />
+    <article title="Introducere">
+        <p>Motivația pentru cheltuieli.app a venit din nevoia și dorința de-a avea flexibilitatea și puterea de calcul al limbajelor de programare, familiaritatea și libertatea unui caiet de notițe electronic, esteticul plăcut al unei reviste digitale și, nu în ultimul rând, ușurința de-a folosi instrumente de afișare pentru vizualizarea datelor financiare.</p>
+        <p>În definitiv, cheltuieli.app este o platformă de interpretare și vizualizare a datelor, dar abordarea este diferită: te implică în poveste și face astfel încât să-ți fie întotdeauna la îndemână să găsești informația de care ai nevoie pe moment. Experiența de lucru este ceea ce conduce acest proiect.</p>
+        <p>Imaginează-ți că ai putea schimba conținutui unui articol financiar pe care-l citești și brusc — devine despre situația ta, te include în poveste și-ți prezintă conținutul prin diverite tehnici de reprezentare a informației. Dacă te încântă, atunci ești unde trebuie.</p>
+        <statement>Schimbările în oricare dintre articole persistă doar pe durata unei sesiuni de browser și nu sunt permanente; asta înseamnă că la următoarea accesare vei regăsi informația inițială și vei prierde schimbările tale. Poți citi cum să le păstrezi în secțiunea dedicată aplicației de mobil.</statement>
+    </article>
+    <article title="Despre cheltuieli">
+        <p>Aplicația este o revistă digitală al cărui conținut este în totalitate editabil. Acest prim articol are rol introductiv cu scopul de-a te familiariza cu instrumentele disponibile în acest cadru nou de interacțiune cu informația în timp real și, desigur, să îți faci o imagine cât mai completă despre când și cum îți va fi de folos.</p>
+        <p>Există o notație specială, pe care o poți găsi în căsuța de mai jos. Aceasta se numește „expresie” și arată ca și cum ar descrie o mulțime, ca în matematică. Pentru început, modifică din textul „numele tău” în numele tău așa cum apare în istoricul de plăți încărcat.</p>
+        <e type="venncode" value="{b ≠ numele tău}" name="Exemplu de cheltuieli" />
+        <p>Un calcul rapid este efectuat în această pagină de îndată ce ai modificat textul de mai sus. Se poate observa la dreapta, după ce s-a închis acolada. Semnul egal urmat de un număr ne spune câte astfel de plăți corespund descrierii date. Dacă apare mesajul „nimic” atunci înseamnă fie că ai scris greșit numele, fie nu există plăți.</p>
+        <p>Litera „b” din expresia de mai sus se citește „beneficiar” și înseamnă cel care a primit o sumă de bani. Dacă ar fi să citești descrierea de mai sus cu voce tare, ai putea spune „dă-mi toate plățile care au beneficiarul diferit de X” și le-ai obține de îndată, dacă există.</p>
+        <p>Întrucât se citește istoricul tău de plăți și se elimină toate acelea în care ești beneficiar, informația rămasă trebuie să reprezinte mulțimea cheltuielilor până în prezent. Se poate valida corectitudinea dacă ne uităm la aceste date printr-o componentă de afișare.</p>
+        <diagram value="Exemplu de cheltuieli" type="bar" x="b" y="x" max="5" />
+        <p>O diagramă este o componentă de afișare. Scopul acestor instrumente este de-a citi o expresie și de-a reprezenta informația într-un mod cât mai accesibil pentru gândirea umană, astfel că un tabel alături de o diagramă permit vizualizarea datelor financiare atât grafic cât și interactiv.</p>
+        <p>Relația dintre diagrama 2.1 și expresia de la începutul articolului este dată de referința comună. Atât expresia 2.1 cât și diagrama 2.1 au aceeași referință de text „Exemplu de cheltuieli” și astfel s-a creat o legătură între cele două. Dacă vei modifica expresia, diagrama se actualizează de îndată.</p>
+        <table value="Exemplu de cheltuieli" cols="dbcs" sort="d desc" max="10" />
+        <p>Trebuie știut faptul că o expresie poate avea mai multe reprezentări logice. Asta înseamnă că se pot folosi oricâte componente de afișare pentru diferite relații. De exemplu, expresia definită mai devreme poate fi reprezentată atât în diagrama de mai jos, cât și în tabelul de mai sus, toate acestea în plus față de diagrama inițială.</p>
+        <diagram value="Exemplu de cheltuieli" type="time" x="d m3/y" y="x/bc" max="3" />
+        <p>Într-un articol pot exista oricâte expresii, diagrame, tabele, ș.a.m.d. atât timp cât se respectă singura regulă cu privire la interacțiunea dintre aceste componente de afișare și căsuțele de input. Informația din acest articol este de ajuns să poți lucra cu elemente de bază, dar cheltuieli.app reușește să ofere mai mult și asta vei afla în următorul articol.</p>
+        <statement value="Poți adaugă oricâte elemente dorești prin instrumentul de edit din partea dreaptă, jos. Această unealtă este prezentă în permanență pe fiecare articol. Recomandarea este să parcurgi conținutul integral înainte de-a folosi acest feature." />
+    </article>
+    <article title="Venituri și economii">
+        <statement value="În partea dreaptă, aproape de colțul de jos, există un pătrățel roșu cu rol de avertisment. Acest indicator apare atunci când este cel puțin o greșeală într-o expresie din articolul de față. Oare știi cum se corectează?" />
+        <p>Să începem cu o expresie familiară. Mai precis, o să refolosești ce-ai observat în articolul anterior încă de la început: notația pentru a descrie o mulțime; doar că dintr-o singură modificare se schimbă astfel încât să poată fi citită „dă-mi toate plățile care au beneficiarul X”.</p>
+        <e type="venncode" value="{b = numele tău}" name="Exemplu de venituri" />
+        <p>Dacă ți-ai trecut numele corect, o să vezi de îndată cum mesajul de după egal se preschimbă într-un număr echivalent cu totalul de plăți în care ai fost beneficiarul. Spunem despre aceste plăți ca sunt veniturile tale întrucât ai încasat o sumă de bani de fiecare dată.</p>
+        <p>Asemenea exemplelor din articolul anterior despre cheltuieli, pentru orice expresie se poate folosi o componentă de afișare. În tabelul de mai jos se pot vedea sumele câștigate, ordonatorul acestor plăți (de exemplu, angajatorul tău) și data la care s-a înregistrat plata respectivă.</p>
+        <table value="Exemplu de venituri" sort="d desc" max="15" cols="asd" />
+        <p>Un grafic în timp este potrivit pentru a reprezenta informația din tabel întrucât venitul este considerat o plată lunară. În cel mai fericit caz, vei observa o linie continuă ce crește în timp. De asemenea, cu ajutorul acestui grafic poți găsi ușor întreruperile de la lună la lună.</p>
+        <diagram value="Exemplu de venituri" type="time" x="d m3/y" y="x/a" max="3" />
+        <p>La fel de potrivit este și un grafic în care informația este aranjată în coloane. De exemplu, diagrama de mai jos ne arată suma acumulată pentru fiecare caz în parte. Într-un astfel de grafic, coloanele sunt ordonate descrescător în funcție de suma totală, astfel că prima coloana (cea mai din stânga) reprezintă suma cea mai mare.</p>
+        <diagram value="Exemplu de venituri" type="bar" x="a" y="x" max="3" />
+        <p>Deși scopul principal este să găsim cel mai accesibil mod de-a reprezenta informația pe ecran, trebuie știut că există opțiunea de-a apela funcții atât „out of the box” cât și definite ad-hoc. Următoarea expresie folosește o funcție pentru a calcula suma totală.</p>
+        <e type="venncode" value="sum: Exemplu de venituri" name="Total venituri" />
+        <p>O funcție este apelată atunci când se află înaintea expresiei urmată de semnul două puncte. Un alt exemplu de funcție „out of the box” este dat în continuare, unde aflăm care este valoarea mediană (din statistică) pentru sumele mai mici decât valoarea maximă încasată.</p>
+        <e type="venncode" value="max: Exemplu de venituri" name="Cel mai mare venit" />
+        <p>Între două sau mai multe expresii se pot folosi operatori de intersecție, diferență sau uniune. În exemplul de mai jos avem o funcție apelată pe intersecția dintre expresia declarată la începutul articolului și o nouă descriere unde suma este strict mai mică decât o referință pentru cel mai mare venit.</p>
+        <e type="venncode" value="median: Exemplu de venituri ~ {s &lt; Cel mai mare venit}" />
+        <p>Așa cum s-a observat în articolul anterior, orice expresie poate fi sursă pentru o componentă de afișare, astfel că valoarea maximă găsită prin expresia de mai sus este prezentată ca fiind prima linie în tabelul de mai jos. Un astfel de rezultat se poate obține și prin ordonarea după coloane în tabel.</p>
+        <table value="Cel mai mare venit" cols="acds" sort="s desc" max="3" />
+        <p>În final, ne putem uita la banii investiți (sau economisiți, puși deoparte) prin descrierea unei expresii noi care să ne aducă plățile clasificate ca și „economii” unde propria persoana este atât beneficiar cât și ordonator. Acestă literă nou introdusă „c” este subiectul principal în următorul articol.</p>
+        <e type="ratio" value="sum: {b = numele tău, c = economii}" rel="Total venituri" />
+    </article>
+    <article title="Clasificare plăți">
+        <p>În acest articol o să continuam să explorăm diferite combinații între funcții, expresii și metode de-a reprezenta informația. Să presupunem că am vrea să înțelegem cum au fost cheltuiți banii pe o anumită perioadă, care au fost sumele încasate în acea periodă și dacă există un tipar (de exemplu, dacă este ceva sezonier).</p>
+        <e type="venncode" value="{c = Chirie | Utilități | Alimente}" name="Exemplu de clasificare" />
+        <p>Litera „c” vine de la categorie sau clasă de plăți, în ideea de clasificare. Expresia de mai sus se poate citi în felul următor „vreau toate plățile care au fost clasificate ca și chirie, utilități și alimente”. De menționat că, în exemplul dat s-a folosit operatorul de uniune pe categorie (acea linie verticală între cuvinte).</p>
+        <e type="venncode" value="median: Exemplu de clasificare" name="Mediana claselor" />
+        <p>Funcția de mediană folosită în expresie forțează o diagramă să ne arate cum anume a fost calculată valoarea finală. Următoarea diagramă conține o linie roșie, paralelă cu axa X ce ne arată unde se situează valoarea calculată. Totodată există și o bară orizontală de control, ce poate fi glisată de la stânga la dreapta.</p>
+        <diagram type="time" value="Mediana claselor" x="b" y="x" max="5" />
+        <statement>Dacă vei șterge funcția de mediană din expresia 4.2 atunci diagrama o să se schimbe automat în forma sa interactivă, dar dacă vei înlocui funcția cu o altă funcție atunci diagrama se păstrează statică, însă informația reprezentată se schimbă pentru a reflecta cum se calculează rezultatul.</statement>
+        <p>Putem afla dintr-un tabel ordonat care sunt acele plăți care depășesc valoarea mediană, adică ceea ce se află în partea superioară față de punctul central; sau urmărind informația din grafic, plățile care se află deasupra liniei orizontale roșie.</p>
+        <table value="Mediana claselor" sort="s desc" cols="abds" max="10" />
+        <e type="venncode" value="{b ≠ numele tău}" name="Cheltuielile mele" />
+        <p>Să încercăm o reprezentare printr-un raport între totalul de cheltuieli pe o perioadă și expresia deja definită. Avem nevoie să aflăm totalul cheltuielilor din acest an. Mai întâi, asigură-te că expresia 4.3 de mai sus este corectă.</p>
+        <e type="venncode" value="sum: Cheltuielile mele ~ {d = 2023}" name="Total cheltuieli" />
+        <e type="ratio" value="sum: Exemplu de clasificare ~ {d = 2023}" rel="Total cheltuieli" />
+        <p>Procentul de mai sus ne spune cât reprezintă cheltuielile pentru „chirie, utilități și alimente” în raport cu totalul cheltuielilor din anul ales prin litera „d” și restul de parametrii. Operatorul tildă este tradus ca și intersecția dintre cele două expresii (expresia 4.1 de la începutul articolului și expresia ad-hod pentru „d”).</p>
+        <p>În continuare ne-am dori să știm restul de procentaj și cum se distribuie. Putem folosi o diagramă radială pentru a afla rapid acest detaliu. Expresia de mai jos de diagramă folosește un operator de „diferență” între cele două mulțimi. Se traduce astfel „da-mi toate plățile din mulțimea A, dar nu și pe acelea care se regăsesc în mulțimea B”.</p>
+        <diagram type="pie" value="Restul de cheltuieli" max="5" x="c" y="s" />
+        <e type="venncode" value="Cheltuielile mele - Exemplu de clasificare ~ {d = 2023}" name="Restul de cheltuieli" />
+    </article>
+    <article title="Desfășurător">
+        <diagram value="Exemplu de căutare" x="d m3" y="#" />
+        <p>Un desfășurător ne ajută să vedem ce plăți s-au făcut conform criteriilor de căutare. Se vrea în acest articol să demonstrăm puterea combinată a trei elemente: o expresie cu rol de căsuță de căutare; o diagramă statică pentru vizualizarea rapidă a rezultatelor într-un ciclu de doisprezece luni; un tabel cuprinzător pentru fiecare înregistrare. Toate acestea sincronizate printr-o singură expresie.</p>
+        <e type="venncode" value="{...}" name="Exemplu de căutare" />
+        <p>Notația cu trei puncte înseamnă „da-mi orice există” și nu necesită parametrii.</p>
+        <table value="Exemplu de căutare" cols="bcds" sort="d desc" max="30" />
+    </article>
+    <article title="Ce urmează?">
+        <p>Gata, ai parcurs conținutul integral! Acum știi elementele de bază pentru a folosi aplicația.</p>
+        <p>În articolul de introducere a fost prezentată motivația pentru cheltuieli.app alături de o importantă caracteristică ce conduce dezvoltarea în ansamblu. Experiența de lucru este ceea ce ghidează direcția și progresul. Viziunea aplicației este să ajungă să te cunoască și să-ți ofere asistență virtuală, să fie complementară cu activitatea ta săptămânală.</p>
+        <p>Produsul de față, așa cum a fost parcurs, este un MVP (din engleză, „minimum viable product”), într-o etapă pilot, ce își propune să demonstreze și să valideze setul de funcționalități prezentate sub forma unor expresii și componente de afișare, adică intrări și ieșiri.</p>
+        <p>În prezent se lucrează și la instrumente adiacente pentru a simplifica colectarea datelor de intrare.</p>
+        <statement action="https://www.youtube.com/@cheltuieli-app">Poți învăța mai multe despre cheltuieli.app și poți rămâne conectat la progresul întregului proiect printr-un subscribe pe YouTube. Apasă de două ori consecutiv oriunde în această căsuță de text pentru a merge într-acolo.</statement>
+    </article>
+</cheltuieli.app>
